@@ -9,7 +9,7 @@ To reduce the vulnerability to these timing attacks, it is recommended to use th
 
 Timing Attacks is a type of attack that uses the time taken to execute the algorithms to discover hints about secrets. Let's see this picture. 
    
-![Image](timecheck.png)  
+<div align="center"> <img src="timecheck.png"/> </div>
   
 To execute comparing these 2 strings *HYDEHEAVEN* and *HYPEHEAVEN* with **a == b**, it will return value in 30ms.  
   
@@ -23,8 +23,9 @@ def check_authorized(password):
   
 If a programmer using this code to check the password to enter a vault and I can capture the responding time, I can use brute force attack to re-generate the 3rd character until the responding time change to 40ms. That's means I figure out the right 3rd character and then go next for 4th character and so on.
   
-![Timing to execute '== operation'](runcode01.png)  
-*Picture 1: Timing to execute '== operation'*
+<div align="center"> <img src="runcode01.png"/> <br>
+<i><b>Picture 1:</b> Timing to execute '== operation'</i>
+</div>
     
 ### Solution 
 The Python standard library provides the function **compare_digest(a, b)** to be the solution to compare the two strings in a way that:  
