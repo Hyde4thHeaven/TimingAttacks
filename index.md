@@ -23,6 +23,9 @@ def check_authorized(password):
   
 If a programmer using this code to check the password to enter a vault and I can capture the responding time, I can use brute force attack to re-generate the 3rd character until the responding time change to 40ms. That's means I figure out the right 3rd character and then go next for 4th character and so on.
   
+![Timing to execute '== operation'](runcode01.png)  
+*Picture 1: Timing to execute '== operation'*
+    
 ### Solution 
 The Python standard library provides the function **compare_digest(a, b)** to be the solution to compare the two strings in a way that:  
 - Compare all of the characters before returning true or false.  
