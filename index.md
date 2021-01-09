@@ -61,7 +61,7 @@ ______________________________
    <td> <h3><i>Although my profile picture is quiet, but the real me can make some noise.</i></h3>
       <hr>
       <b><font color="Blue"> Author: Vuttawat Uyanont </font></b>  <br>
-      <font color="grey"><i>Sexiest former engineer and banker who interested in IT & Tech, Sake, and Beer.</i></font>  <br>
+      <font color="grey"><i>Sexiest former engineer&banker who interested in IT & Tech, Sake, and Beer.</i></font>  <br>
       <b>Studying:</b> Master Computer Science in Cybersecurity Management at Mahanakorn University.  <br> </td>  
    <td><img src="Author.png" width="150"/></td>  
  </tr>
