@@ -1,8 +1,10 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Hyde4thHeaven/TimingAttacks/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+The most common string comparison in Python programming is **==**. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+However, when you coding as **a == b**, if a and b are of different lengths, or if an error occurs, a timing attack could theoretically reveal information about the types and lengths of a and b—but not their values.
+
+To reduce the vulnerability to timing attacks, it is recommended to use the **compare_digest()** function instead **==** operator.
 
 ### Markdown
 
