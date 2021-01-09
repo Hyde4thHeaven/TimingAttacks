@@ -3,15 +3,15 @@ The most common string comparison in Python programming is **==**.
   
 However, when you coding as **a == b**, if a and b are of different lengths, or if an error occurs, a timing attack could theoretically reveal information about the types and lengths of a and b, but not their values.  
   
-To reduce the vulnerability to this timing attacks, it is recommended to use the **compare_digest()** function instead **==** operator.  
+To reduce the vulnerability to these timing attacks, it is recommended to use the **compare_digest()** function instead **==** operator.  
 
 ### What is Timing Attacks?
 
-Timing Attacks is a type of attack that use the time taken to execute the algorithms to discover hints about secrets. Let's see this picture. 
+Timing Attacks is a type of attack that uses the time taken to execute the algorithms to discover hints about secrets. Let's see this picture. 
    
 ![Image](timecheck.png)  
   
-To execute comparing these 2 string *HYDEHEAVEN* and *HYPEHEAVEN* with **a == b**, it will return value in 30ms.  
+To execute comparing these 2 strings *HYDEHEAVEN* and *HYPEHEAVEN* with **a == b**, it will return value in 30ms.  
   
 ```markdown
 def check_authorized(password):
@@ -21,10 +21,10 @@ def check_authorized(password):
         return False
 ```
   
-If a programmer using this code to check the password to enter a vault and I can capture the responding time, I can use brute force attack to re-generate the 3rd character until the responding time change to 40ms. That's mean I figure out the right 3rd character and then go next for 4th character and so on.
+If a programmer using this code to check the password to enter a vault and I can capture the responding time, I can use brute force attack to re-generate the 3rd character until the responding time change to 40ms. That's means I figure out the right 3rd character and then go next for 4th character and so on.
   
 ### Solution 
-For the Python standard library provides the function **hmac.compare_digest(a, b)** to be the solution to compare the two strings in a way that:  
+The Python standard library provides the function **hmac.compare_digest(a, b)** to be the solution to compare the two strings in a way that:  
 - Compare all of the characters before returning true or false.  
 - And also compare strings of equal length.  
   
@@ -51,7 +51,7 @@ def check_authorized(password):
   
 **Easy?** Secured coding is just a flipped hand when you know the hint!
 
-Let's hunt more vulnerable code to make **Code for Security** next episode. Stay tune!  
+Let's hunt more vulnerable code to make **Code for Security** next episode. Stay tuned!  
   
 **#TimingAttacks #Code4Sec**  
   
@@ -66,4 +66,4 @@ ______________________________
    <td><img src="Author.png" width="150"/></td>  
  </tr>
 </table>
-
+  
