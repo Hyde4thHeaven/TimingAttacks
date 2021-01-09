@@ -1,5 +1,4 @@
-## Welcome to another episode of my serires **Code for Security**.  
-
+## Welcome to another episode of my series **Code for Security**.  
 The most common string comparison in Python programming is **==**.  
   
 However, when you coding as **a == b**, if a and b are of different lengths, or if an error occurs, a timing attack could theoretically reveal information about the types and lengths of a and b, but not their values.  
@@ -28,13 +27,14 @@ If a programmer using this code to check the password to enter a vault and I can
 For the Python standard library provides the function **hmac.compare_digest(a, b)** to be the solution to compare the two strings in a way that:  
 - Compare all of the characters before returning true or false.  
 - And also compare strings of equal length.  
-his function only in Python 3.3+.  
+  
+This function only in Python 3.3+.  
   
 ### Non-vulnerable code
 From above code:  
 ```markdown
 def check_authorized(password):
-    if **password == 'HYDEHEAVEN'**:
+    if password == 'HYDEHEAVEN':
         return True
     else:
         return False
@@ -43,17 +43,18 @@ def check_authorized(password):
 We can change it to non-vulnerable code like this:  
 ```markdown
 def check_authorized(password):
-    if **hmac.compare_digest(password, 'HYDEHEAVEN')**:
+    if hmac.compare_digest(password, 'HYDEHEAVEN'):
         return True
     else:
         return False
 ```
   
-Easy? Secure coding is just a flipped hand when you know the hint!
+**Easy?** Secured coding is just a flipped hand when you know the hint!
 
 Let's hunt more vulnerable code to make **Code for Security** next episode. Stay tune!  
   
-#TimingAttacks #Code4Sec
+**#TimingAttacks #Code4Sec**  
+  
 ______________________________
 <table border="0">
  <tr>
@@ -62,7 +63,7 @@ ______________________________
       <b><font color="Blue"> Author: Vuttawat Uyanont </font></b>  <br>
       <font color="grey"><i>Sexiest former engineer and banker who interested in IT & Tech, Sake, and Beer.</i></font>  <br>
       <b>Studying:</b> Master Computer Science in Cybersecurity Management at Mahanakorn University.  <br> </td>  
-   <td><img src="https://github.com/Hyde4thHeaven/Hyde4thHeaven.GitHub.io/blob/main/How-to-Create-GitLab-Pages/img/author.png" width="150"/></td>  
+   <td><img src="Author.png" width="150"/></td>  
  </tr>
 </table>
 
