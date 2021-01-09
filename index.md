@@ -32,7 +32,7 @@ The Python standard library provides the function **compare_digest(a, b)** to be
 - Compare all of the characters before returning true or false.  
 - And also compare strings of equal length.  
   
-This function only in Python 3.3+ with import *from hmac import compare_digest*.  
+This function only in Python 3.3+ with import - **from *hmac* import *compare_digest***.  
   
 ### Non-vulnerable code
 From above code:  
