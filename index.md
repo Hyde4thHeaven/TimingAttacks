@@ -24,11 +24,11 @@ def check_authorized(password):
 If a programmer using this code to check the password to enter a vault and I can capture the responding time, I can use brute force attack to re-generate the 3rd character until the responding time change to 40ms. That's means I figure out the right 3rd character and then go next for 4th character and so on.
   
 ### Solution 
-The Python standard library provides the function **hmac.compare_digest(a, b)** to be the solution to compare the two strings in a way that:  
+The Python standard library provides the function **compare_digest(a, b)** to be the solution to compare the two strings in a way that:  
 - Compare all of the characters before returning true or false.  
 - And also compare strings of equal length.  
   
-This function only in Python 3.3+.  
+This function only in Python 3.3+ with import *from hmac import compare_digest*.  
   
 ### Non-vulnerable code
 From above code:  
@@ -43,7 +43,7 @@ def check_authorized(password):
 We can change it to non-vulnerable code like this:  
 ```markdown
 def check_authorized(password):
-    if hmac.compare_digest(password, 'HYDEHEAVEN'):
+    if compare_digest(password, 'HYDEHEAVEN'):
         return True
     else:
         return False
