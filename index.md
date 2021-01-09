@@ -1,4 +1,4 @@
-## Welcome to another episode of my series **Code for Security**.  
+## Welcome to 1st episode of my series **Code for Security**.  
 The most common string comparison in Python programming is **==**.  
   
 However, when you coding as **a == b**, if a and b are of different lengths, or if an error occurs, a timing attack could theoretically reveal information about the types and lengths of a and b, but not their values.  
