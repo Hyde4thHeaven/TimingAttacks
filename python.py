@@ -41,3 +41,31 @@ end = time.time()
 print('Time for HYDEHEAVEN (== operation:)', end - start)
 
 print('=========================')
+
+print('=========================')
+
+password = 'HYPEHEAVEN'
+start = time.time()
+print(check_authorized_secured(password))
+end = time.time()
+print('Time for HYPEHEAVEN (== operation:)', end - start)
+
+password = 'HYDEHAEVEN'*50
+start = time.time()
+print(check_authorized_secured(password))
+end = time.time()
+print('Time for HYDEHAEVEN (== operation:)', end - start)
+
+password = 'HYDEHEAVEN'*50 + 'T'
+start = time.time()
+print(check_authorized_secured(password))
+end = time.time()
+print('Time for HYDEHEAVENNNNT (== operation:)', end - start)
+
+password = 'HYDEHEAVEN'*50
+start = time.time()
+print(check_authorized_secured(password))
+end = time.time()
+print('Time for HYDEHEAVEN (== operation:)', end - start)
+
+print('=========================')
